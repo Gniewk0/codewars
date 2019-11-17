@@ -1,0 +1,6 @@
+unction findLongest(array){
+  // code here
+   return array.slice().reduce(function(a,b){
+    return b.toString().length > a.toString().length? b : a;  
+  });
+}
