@@ -1,0 +1,4 @@
+function removeChar(str){
+ const wynik = str.slice(1,-1);
+ return wynik
+ };
