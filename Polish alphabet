@@ -1,0 +1,28 @@
+function correctPolishLetters (string) {
+  const split = string.split('');
+  const wynik = [];
+  for (var i = 0; i < string.length; i++) {
+    if(split[i] === 'ą'){
+      wynik.push('a');
+    } else if (split[i] === 'ć'){
+      wynik.push('c');
+    } else if (split[i] === 'ę'){
+      wynik.push('e');
+    } else if (split[i] === 'ł'){
+      wynik.push('l');
+    } else if (split[i] === 'ń'){
+      wynik.push('n');
+    } else if (split[i] === 'ó'){
+      wynik.push('o');
+    } else if (split[i] === 'ś'){
+      wynik.push('s');
+    } else if (split[i] === 'ź'){
+      wynik.push('z');
+    } else if (split[i] === 'ż'){
+      wynik.push('z');
+    } else {
+    wynik.push(split[i])
+    }
+  }
+  return wynik.join('');
+}
